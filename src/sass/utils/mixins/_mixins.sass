@@ -1,0 +1,21 @@
+
+@mixin clearfix()
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+@mixin square($length)
+  height: $length
+  width: $length
+
+@mixin margin-center($margin: auto)
+  margin-left: $margin
+  margin-right: $margin
+
+@mixin pseudo-blank($display: block)
+  content: ""
+  display: $display
+
+@mixin tran()
+  transition: all .3s

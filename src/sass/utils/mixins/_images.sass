@@ -1,0 +1,38 @@
+// Sets background image and holds it in place on larger viewports. This creates parralax like scroll effect. Used only for large viewports as background position: fixed causes a bug on iOS devices.
+
+$image-dir : "../images/"
+@mixin bg-image($img)
+  background-image: url("#{$image-dir}#{$img}")
+  background-repeat: no-repeat
+
+=bg-image--hero($path)
+  background-image: url('#{$path}')
+  background-repeat: no-repeat
+  background-size: cover
+  +gt-lg
+    background-attachment: fixed
+
+
+// Sets a backgound image with an overlay
+=bg-image--overlay($path)
+  $color : transparentize(#333, .3)
+  background: linear-gradient($color,$color), url('#{$path}')
+  background-repeat: no-repeat
+  background-size: cover
+
+// sets background image with an overlay and fixes the position in larger viewports.
+=bg-image--hero-overlay
+  +bg-image--overlay
+  +breakpoint('large')
+    background-attachment: fixed
+
+
+=text-replace($img, $width, $height)
+  width: $width
+  height: $height
+  background-image: url("../images/#{$img}")
+  background-repeat: no-repeat
+  background-size: contain
+  font: 0/0 a
+  text-shadow: none
+  color: transparent

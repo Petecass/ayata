@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayata IQ | Landing Page</title>
+    <meta name="description" content="Ayata IQ designs ultracapacitor systems for hybrid-electric vehicles (sHEV, HEV) for motorcycle, three-wheeler and car manufacturers.">
+    <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Montserrat:400,700:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+
+    <!-- build:css css/app.min.css -->
+      <link rel="stylesheet" href="css/app.css">
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    {% block content %}
+
+    {% endblock %}
+    <!-- <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+          {% include "partials/offcanvas-nav.html" %}
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+
+        </div>
+      </div>
+    </div>--> <!-- end off-canvas-wrapper -->
+
+    <!-- build:js js/app.min.js -->
+      <!-- inject:js -->
+      <!-- endinject -->
+    <!-- endbuild -->
+
+  </body>
+</html>

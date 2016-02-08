@@ -1,0 +1,51 @@
+// Media query use the breakpoint mixin included in foundation
+
+@mixin mq($break)
+
+  @if $mobile-first
+
+    @if $break == "x-small"
+      @media (min-width: $brkpoint-xs)
+        @content
+
+
+    @else if $break == "small"
+      @media (min-width: $brkpoint-s)
+        @content
+
+
+    @else if $break == "medium"
+      @media (min-width: $brkpoint-md)
+        @content
+
+
+    @else if $break == "large"
+      @media (min-width: $brkpoint-l)
+        @content
+
+
+    @else if $break == "x-large"
+      @media (min-width: $brkpoint-xl)
+        @content
+
+
+    @else
+
+      @if $break == "small"
+        @media (max-width: $brkpoint-s)
+          @content
+
+
+      @else if $break == "medium"
+        @media (max-width: $brkpoint-md)
+          @content
+
+
+      @else if $break == "large"
+        @media (max-width: $brkpoint-l)
+          @content
+
+
+      @else if $break == "x-large"
+        @media (max-width: $brkpoint-xl)
+          @content
