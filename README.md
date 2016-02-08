@@ -1,4 +1,4 @@
-#47 East main repo.
+#start notes.
 
 install node npm gulp and bower.
 
