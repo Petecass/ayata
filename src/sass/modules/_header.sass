@@ -1,0 +1,56 @@
+
+.header-home
+  position: relative
+  height: 100vh
+  padding: 1px 15px
+  &::before
+    content: ''
+    position: absolute
+    height: 100%
+    width: 100%
+    top: 0
+    left: 0
+    background: url('../images/video-overlay.png')
+    z-index: -90
+  +breakpoint( medium down)
+    background: url('../images/header-bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+
+
+  &__video
+
+    position: fixed
+    top: 50%
+    left: 50%
+    min-width: 100%
+    min-height: 100%
+    width: auto
+    height: auto
+    z-index: -100
+    -ms-transform: translateX(-50%) translateY(-50%)
+    -moz-transform: translateX(-50%) translateY(-50%)
+    -webkit-transform: translateX(-50%) translateY(-50%)
+    transform: translateX(-50%) translateY(-50%)
+    background: url('../images/header-bg.jpg') no-repeat
+    background-size: cover
+
+
+    +breakpoint( medium down)
+      display: none
+
+  &__title
+    h3
+      color: #fff
+      font-weight: 700
+    text-align: center
+    max-width: 40rem
+    margin-top: 4rem
+    margin-left: auto
+    margin-right: auto
+
+    +breakpoint(medium)
+      margin-top: 10rem
+
+.header-logo
+  margin: 0 auto 2rem
