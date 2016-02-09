@@ -1,41 +1,31 @@
 
 .footer
-  text-align: center
+  text-align: left
   +breakpoint(medium)
-    text-align: left
-  padding: rem-calc(75) 0
+    text-align: center
+  padding: rem-calc(50) 0
   background: $footer-bg
   color: $footer-color
+  font-size: 0.85rem
 
-  &-title
-    color: #fff
+  &-address
+    background: url('../images/map.png') left no-repeat
+
+  &-phone
+    background: url('../images/phone.png') left no-repeat
+
+  &-email
+    background: url('../images/email.png') left no-repeat
+
+  &-contact
+    padding-left: rem-calc(35)
 
   &-copy
-    font-size: 0.8rem
-    margin-bottom: rem-calc(26)
+    text-align: center
 
   &-facebook
     display: inline-block
     font-size: 0.8rem
 
-  &-social
-    display: inline-block
-    margin-top: 1rem
-    margin-left: 0
-    +breakpoint(large)
-      margin-top: 0
-
-  .input-group-button, .input-group-field
-    height: 32px
-
-  input.button
-    padding: 0.5rem 1.5rem
-
-.footer-navigation
-  margin: 0
-  padding: 0
-  margin-bottom: rem-calc(50)
-  li
-    margin-right: 1rem
-    @extend %nav-items
-    font-size: 0.9rem
+  &-social:first-child
+    padding-right: rem-calc(15)

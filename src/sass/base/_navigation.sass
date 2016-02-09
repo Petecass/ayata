@@ -6,12 +6,7 @@
   &:last-of-type
     margin-right: 0
 
-.logo-white
-  +text-replace("logo-white.png", 95px, 50px)
-  display: inline-block
-
-.logo-red
-  +text-replace("logo-red.png", 95px, 50px)
+.nav-logo
   display: inline-block
 
 .navbar
@@ -19,7 +14,7 @@
   align-items: center
   width: 100%
   padding: 2rem 5%
-  color: rgba(153, 153, 153, 0.7)
+  color: $white
 
   &-brand
     margin-top: 0
@@ -46,26 +41,7 @@
         padding-bottom: 2px !important
         border-bottom: solid 2px transparent
 
-    .button
-      padding: 5px 10px
 
-    .active
-      color: $--primary
-      border-color: $--primary
-      &:hover
-        background-color: #fff
-
-
-    .is-submenu-item
-      a
-        color: #fff
-        border: none
-      border-bottom: solid 1px transparentize(#fff, 0.8)
-      text-align: center
-      text-transform: uppercase
-      padding: 1rem 1rem
-      &:last-of-type
-        border: none
 
 #nav-toggle
   +breakpoint(medium)
@@ -115,17 +91,3 @@
 .menu > li:not(.menu-text) > a
   padding: 0
 
-
-
-.offcanvas-nav
-  text-align: center
-  padding-top: 2rem
-  padding-bottom: 3rem
-
-  .menu > li
-    margin-bottom: 2rem
-    margin-top: 2rem
-
-  .button
-    margin: 0 !important
-    display: inline-block !important

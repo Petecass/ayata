@@ -128,16 +128,16 @@ $header-sizes: (
     'h6': 16,
   ),
   medium: (
-    'h1': 48,
-    'h2': 40,
-    'h3': 31,
-    'h4': 25,
-    'h5': 20,
-    'h6': 16,
+    'h1': 50,
+    'h2': 23,
+    'h3': 30,
+    'h4': 19,
+    'h5': 16,
+    'h6': 13,
   ),
 );
 
-$header-color: $--primary;
+$header-color: $--main-heading-color;
 $header-lineheight: 1.2;
 $header-color: inherit;
 $header-lineheight: 1.4;
@@ -193,7 +193,7 @@ $abbr-underline: 1px dotted $black;
 $lead-font-size: $global-font-size * 1.25;
 $lead-lineheight: 1.6;
 $subheader-lineheight: 1.4;
-$subheader-color: $dark-gray;
+$subheader-color: $dusty-gray;
 $subheader-font-weight: $global-weight-normal;
 $subheader-margin-top: 0.2rem;
 $subheader-margin-bottom: 0.5rem;
@@ -330,7 +330,7 @@ $dropdown-sizes: (
 
 $dropdownmenu-arrows: false;
 $dropdownmenu-min-width: 150px;
-$dropdownmenu-background: transparentize($--dropdown-menu-bg, 0.4) ;
+$dropdownmenu-background: transparentize($white, 0.4) ;
 $dropdownmenu-border: none;
 $dropdownmenu-arrows: true;
 $dropdownmenu-arrow-color: $anchor-color;
