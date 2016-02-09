@@ -39,8 +39,13 @@
 //  34. Tooltip
 //  35. Top Bar
 
+<<<<<<< HEAD
 @import './bower_components/foundation-sites/scss/util/util';
 //@import 'util/util';
+=======
+@import '../../bower_components/foundation-sites/scss/util/util';
+
+>>>>>>> 5f0312967088eccf9a610c80e323e68743d02d3c
 // 1. Global
 // ---------
 
@@ -114,7 +119,7 @@ $block-grid-max: 8;
 
 
 $header-font-family: $--font-heading;
-$header-font-family: $body-font-family;
+$header-font-family: 'foco';
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
