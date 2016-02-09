@@ -16,9 +16,9 @@ $(document).ready(function(){
       event.preventDefault();
   });
 
-  window.setTimeout(function(){
-    window.location.href = 'http://www.freedompowertrain.com/';}, 5000
-  );
+  // window.setTimeout(function(){
+  //   window.location.href = 'http://www.freedompowertrain.com/';}, 5000
+  // );
 
 
 
