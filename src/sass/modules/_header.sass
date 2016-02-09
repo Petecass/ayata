@@ -1,17 +1,13 @@
 
-.header-home
+.header
   position: relative
-  height: 100vh
-  padding: 1px 15px
   &::before
     content: ''
     position: absolute
-    height: 100%
+    height: 99.5%
     width: 100%
-    top: 0
-    left: 0
     background: url('../images/video-overlay.png')
-    z-index: -90
+    opacity: 0.7
   +breakpoint( medium down)
     background: url('../images/header-bg.jpg')
     background-repeat: no-repeat
@@ -20,18 +16,11 @@
 
   &__video
 
-    position: fixed
-    top: 50%
-    left: 50%
     min-width: 100%
     min-height: 100%
-    width: auto
+    width: 100%
     height: auto
     z-index: -100
-    -ms-transform: translateX(-50%) translateY(-50%)
-    -moz-transform: translateX(-50%) translateY(-50%)
-    -webkit-transform: translateX(-50%) translateY(-50%)
-    transform: translateX(-50%) translateY(-50%)
     background: url('../images/header-bg.jpg') no-repeat
     background-size: cover
 
@@ -39,19 +28,24 @@
     +breakpoint( medium down)
       display: none
 
-  &__title
-    h3
-      font-family: 'foco'
-      color: #fff
-      font-weight: 700
+  &-text
+    color: $white
+    position: absolute
+    font-size: 66px
+    font-weight: 700
+    top: 40%
+    left: 50%
+    transform: translate(-50%, -50%)
     text-align: center
-    max-width: 40rem
+    width: 860px
     margin-top: 4rem
-    margin-left: auto
-    margin-right: auto
+    font-family: Foco
+    p
+      line-height: 1.2
 
     +breakpoint(medium)
       margin-top: 10rem
 
-.header-logo
-  margin: 0 auto 2rem
+.header-button.hollow
+  color: $--button-header
+  border-color: $--button-header

@@ -39,13 +39,9 @@
 //  34. Tooltip
 //  35. Top Bar
 
-<<<<<<< HEAD
 @import './bower_components/foundation-sites/scss/util/util';
 //@import 'util/util';
-=======
-@import '../../bower_components/foundation-sites/scss/util/util';
 
->>>>>>> 5f0312967088eccf9a610c80e323e68743d02d3c
 // 1. Global
 // ---------
 
@@ -133,9 +129,9 @@ $header-sizes: (
     'h6': 16,
   ),
   medium: (
-    'h1': 50,
-    'h2': 23,
-    'h3': 30,
+    'h1': 28,
+    'h2': 36,
+    'h3': 24,
     'h4': 19,
     'h5': 16,
     'h6': 13,
