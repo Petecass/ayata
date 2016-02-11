@@ -1,9 +1,21 @@
 {% extends "layout-2.html" %}
 
 {% block content%}
+  {% import "macros/navbar-macro.html" as nav %}
+	     {{nav.active('home')}}
 
-
-
+  {% include "partials/header-home.html" %}
+  {% include "partials/spacer-getit.html" %}
+  {% include "partials/aiq-technology.html" %}
+  {% include "partials/spacer-readit.html" %}
+  {% include "partials/aiq-advantage.html" %}
+  {% include "partials/hero-one.html" %}
+  {% include "partials/what-we-do.html" %}
+  {% include "partials/hero-two.html" %}
+  {% include "partials/media-hub.html" %}
+  {% include "partials/people.html" %}
+  {% include "partials/contact-us.html" %}
+<!--
 <header class="header-home">
 <video class="header-home__video" autoplay loop poster="./images/header-bg.jpg">
   <source src="./images/videos/header.webm" type="video/webm">
@@ -14,6 +26,7 @@
   <h3 >Ayata IQ Website Under Development, Redirecting to Old Website Now</h3>
 </div>
 </header>
+-->
 
 
 
@@ -22,5 +35,5 @@
 
 
 
-  <!-- {% include "partials/footer.html" %} -->
+  {% include "partials/footer.html" %}
 {% endblock %}

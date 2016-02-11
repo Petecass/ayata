@@ -44,7 +44,7 @@ gulp.task('compileSass', function(){
 gulp.task('nunjucks', function(){
   nunjucksRender.nunjucks.configure(['src/templates/'], {watch: false});
   return gulp.src('src/pages/**/*.html')
-  
+
   .pipe(nunjucksRender())
 
   // .pipe(rename('*.html'))

@@ -1,30 +1,25 @@
-%nav-items
-  display: inline-block
-  list-style: none
-  vertical-align: middle
-  text-transform: uppercase
-  &:last-of-type
-    margin-right: 0
+.top-bar
+  max-width: 100%
 
-.logo-white
-  +text-replace("logo-white.png", 95px, 50px)
+.nav-logo
+  height: 35px
   display: inline-block
-
-.logo-red
-  +text-replace("logo-red.png", 95px, 50px)
-  display: inline-block
+  padding-left: 35px
 
 .navbar
-  display: flex
-  align-items: center
-  width: 100%
-  padding: 2rem 5%
-  color: rgba(153, 153, 153, 0.7)
+  color: $white
 
-  &-brand
-    margin-top: 0
-    margin-bottom: 0
+  &.top-bar
+    position: absolute
+    width: 100%
+    background-color: transparent
+    z-index: 100
+    margin-top: 10px
+    margin-left: auto
     margin-right: auto
+
+    ul
+      background-color: transparent
 
   &-links
     display: none
@@ -32,100 +27,56 @@
       display: inline-block
     margin: 0
     padding: 0
-    li
-      @extend %nav-items
-      font-size: 0.8rem
-      font-weight: 600
-      margin-right: rem-calc(30px)
-      margin-bottom: 0
+    text-transform: uppercase
+
+    li 
+      margin-right: 15px
+
+      &::last-child
+        margin-right: 0
 
       a
-        vertical-align: middle
-        padding-left: 0
-        padding-right: 0
-        padding-bottom: 2px !important
-        border-bottom: solid 2px transparent
+        color: $white
+        font-family: $--font-nav
+        font-size: 10.15pt
 
-    .button
-      padding: 5px 10px
+.top-bar-right
+  margin-right: 30px
 
-    .active
-      color: $--primary
-      border-color: $--primary
-      &:hover
-        background-color: #fff
+.menu
+  font-family: 'Monserrat'
+  text-transform: uppercase
 
+  > li > a
+    padding: 0.7rem 1.25rem
 
-    .is-submenu-item
-      a
-        color: #fff
-        border: none
-      border-bottom: solid 1px transparentize(#fff, 0.8)
-      text-align: center
-      text-transform: uppercase
-      padding: 1rem 1rem
-      &:last-of-type
-        border: none
+.nav-gray
+  color: rgba(255,255,255,0.6)
 
-#nav-toggle
-  +breakpoint(medium)
-    display: none
-  margin: 0
-  padding: 0
+.active span
   position: relative
-  width: 40px
-  height: 40px
-  background-color: transparent
 
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after
-  cursor: pointer
-  border-radius: 1px
-  height: 3px
-  width: 35px
-  background: #333
-  position: absolute
-  display: block
-  content: ''
-  left: 0
+  &::after
+    content: ''
+    width: 100%
+    position: absolute
+    left: 0
+    bottom: -6px
+    height: 3px
+    background: $--nav-bottom-border
 
-#nav-toggle span:before
-  top: -10px
+.subnav 
+  background: $black
+  text-align:center
 
-#nav-toggle span:after
-  bottom: -10px
+  &-links
+    display: inline-block
 
-.navbar-home
-  position: absolute
-  top: 0
-  left: 0
-  padding-top: rem-calc(46)
-  color: #fff
+  a
+    color: $--subnav-color
+    font-family: $--font-nav
 
-  .button-outline
-    color: #fff
-    border-color: #fff
-    &:hover
-      background-color: transparentize(#fff, 0.8)
-
-      border-color: transparentize(#fff, 0.8)
-      background-clip: padding-box
-
-
-
-.menu > li:not(.menu-text) > a
-  padding: 0
-
-
-
-.offcanvas-nav
-  text-align: center
-  padding-top: 2rem
-  padding-bottom: 3rem
-
-  .menu > li
-    margin-bottom: 2rem
-    margin-top: 2rem
-
-  .button
-    margin: 0 !important
-    display: inline-block !important
+  .active span
+    &::after
+      background: $white
+      bottom: -4px

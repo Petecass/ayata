@@ -1,0 +1,21 @@
+{% macro active(activePage='home') %}
+
+<div class='subnav'>
+	<ul class='subnav-links menu align-center'>
+		<li>
+			<a class="{%if activePage == 'whitepaper' %} active {% endif %}" href='#'><span>WhitePaper</span></a>
+		</li>
+		<li>
+			<a class="{%if activePage == 'video' %} active {% endif %}" href='#'><span>Video</span></a>
+		</li>
+		<li>
+			<a class="{%if activePage == 'blog' %} active {% endif %}" href='#'><span>Blog</span></a>
+		</li>
+		<li>
+			<a class="{%if activePage == 'news' %} active {% endif %}" href='#'><span>News</span></a>
+		</li>
+	</ul><!--subnav-->
+</div><!--subnav-wrap-->
+
+{% endmacro %}
+

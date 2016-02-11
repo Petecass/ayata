@@ -1,0 +1,13 @@
+{% macro page(activePage) %}
+
+<div class='header'>
+  <p class='header__title'>
+  {%if activePage == 'technology' %} AIQ Technology {% endif %}
+  {%if activePage == 'advantage' %} AIQ Advantage {% endif %}
+  {%if activePage == 'what_we_do' %} What We Do {% endif %}
+  {%if activePage == 'media_hub' %} Media Hub {% endif %}
+  {%if activePage == 'people' %} People {% endif %}
+  {%if activePage == 'contact' %} Contact {% endif %}
+</div><!--header-->
+
+{% endmacro %}
