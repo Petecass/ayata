@@ -1,0 +1,14 @@
+{% extends "layout-2.html" %}
+
+{% block content%}
+  {% import "macros/navbar-macro.html" as nav %}
+  	{{nav.active('media_hub')}}
+  {% import "macros/header-macro.html" as header %}
+  	{{header.page('media_hub')}}
+  {% import "macros/subnavbar-macro.html" as subnav %}
+  	{{subnav.active('media')}}
+
+  
+
+  {% include "partials/footer.html" %}
+{% endblock %}

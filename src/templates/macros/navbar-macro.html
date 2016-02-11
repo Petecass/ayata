@@ -5,24 +5,24 @@
       <img class='nav-logo' src='images/main-logo.png' alt='AyataIQ'>
     </div>
     <div class='top-bar-right'>
-      <ul class='navbar-links menu'>
+      <ul class='navbar-links menu {%if activePage != 'home' %} nav-gray {% endif %}'>
         <li>
-          <a class="{%if activePage == 'technology' %} active {% endif %}" href='#'>AIQ Technology</a>
+          <a class="{%if activePage == 'technology' %} active {% endif %}" href='#'><span>AIQ Technology</span></a>
         </li>
         <li>
-          <a class="{%if activePage == 'advantage' %} active {% endif %}" href='#'>AIQ Advantage</a>
+          <a class="{%if activePage == 'advantage' %} active {% endif %}" href='#'><span>AIQ Advantage</span></a>
         </li>
         <li>
-          <a class="{%if activePage == 'what_we_do' %} active {% endif %}" href='#'>What We Do</a>
+          <a class="{%if activePage == 'what_we_do' %} active {% endif %}" href='#'><span>What We Do</span></a>
         </li>
         <li>
-          <a class="{%if activePage == 'media_hub' %} active {% endif %}" href='#'>Media Hub</a>
+          <a class="{%if activePage == 'media_hub' %} active {% endif %}" href='media-hub.html'><span>Media Hub</span></a>
         </li>
         <li>
-          <a class="{%if activePage == 'people' %} active {% endif %}" href='#'>People</a>
+          <a class="{%if activePage == 'people' %} active {% endif %}" href='#'><span>People</span></a>
         </li>
         <li>
-          <a class="{%if activePage == 'contact' %} active {% endif %}" href='#'>Contact</a>
+          <a class="{%if activePage == 'contact' %} active {% endif %}" href='#'><span>Contact</span></a>
         </li>
       </ul>
     </div>
@@ -50,4 +50,5 @@
     </ul>
     <button type="button" class="button" data-toggle="offCanvas" id="nav-toggle"><span></span></button>
   </nav> -->
+
 {% endmacro %}
