@@ -3,22 +3,30 @@
   text-align: left
   +breakpoint(medium)
     text-align: center
-  padding: rem-calc(50) 0
+  padding: rem-calc(30) 0
   background: $footer-bg
   color: $footer-color
   font-size: 0.85rem
 
   &-address
     background: url('../images/map.png') left no-repeat
+    background-size: 15px
+    ::first-child
+      margin-bottom: 0
 
   &-phone
     background: url('../images/phone.png') left no-repeat
+    a
+      color: $footer-color
 
   &-email
     background: url('../images/email.png') left no-repeat
+    a
+      color: $footer-color
 
   &-contact
-    padding-left: rem-calc(35)
+    padding-left: rem-calc(20)
+    background-size: 15px
 
   &-copy
     text-align: center
@@ -27,5 +35,8 @@
     display: inline-block
     font-size: 0.8rem
 
-  &-social:first-child
-    padding-right: rem-calc(15)
+  &-social
+    width: 60px
+
+  :first-child
+    padding-right: rem-calc(5)

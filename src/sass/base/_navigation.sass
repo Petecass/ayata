@@ -32,7 +32,7 @@
     li 
       margin-right: 15px
 
-      ::last-child
+      &::last-child
         margin-right: 0
 
       a
@@ -49,3 +49,34 @@
 
   > li > a
     padding: 0.7rem 1.25rem
+
+.nav-gray
+  color: rgba(255,255,255,0.6)
+
+.active span
+  position: relative
+
+  &::after
+    content: ''
+    width: 100%
+    position: absolute
+    left: 0
+    bottom: -6px
+    height: 3px
+    background: $--nav-bottom-border
+
+.subnav 
+  background: $black
+  text-align:center
+
+  &-links
+    display: inline-block
+
+  a
+    color: $--subnav-color
+    font-family: $--font-nav
+
+  .active span
+    &::after
+      background: $white
+      bottom: -4px

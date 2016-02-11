@@ -1,3 +1,8 @@
+section 
+	padding: rem-calc(100) 0
+	font-family: $--font-body
+	font-size: 20px
+
 .spacer 
 	height: 90px
 	font-size: 1.7rem
@@ -6,7 +11,7 @@
 	text-align: center
 	margin-top: -7px
 	margin-bottom: 0
-	font-family: Foco
+	font-family: $--font-body
 	display: flex
 	flex-direction: column
 	justify-content: center
@@ -24,15 +29,18 @@
 	&.read-it
 		background-color: $spacer-two-bg
 
-section 
-	padding: rem-calc(110) 0
+.hero
+	font-size: 46px
+	font-family: $--font-body
+	font-weight: 700
+	background: url(../images/Rectangle.png) no-repeat;
+	color: $white
 
 .aiq-logo
 	height: 80px
 	margin-top: 40px
 
 .tech
-	font-family: $--font-body
 
 	&-gifs
 		text-align: center
@@ -43,6 +51,50 @@ section
 
 
 .advantage 
-	background-color: $concrete
-	
+	background-color: $bg-grey 	
 
+	.icon
+		height: 120px
+		width: auto
+	
+	h3
+		text-indent: 3rem
+
+	li
+		list-style: none
+		background: url('../images/list-bullet.png') no-repeat left center;
+		background-size: 12px 12px
+		padding-left: rem-calc(25)
+		color: $--subheading-color	
+
+.what-we-do
+	
+	.columns
+		padding: 0 rem-calc(20)
+
+		p
+			color: $--subheading-color	
+
+
+.media-hub
+	
+	.description:first-child
+		margin-bottom: 0
+
+	.icon
+		height: 110px
+
+		&__blog
+			height: 90px
+			margin-bottom: 20px
+
+
+.people
+	background: $bg-grey
+
+	h3
+		margin-bottom: 20px
+
+.contact
+	p
+		color: 
