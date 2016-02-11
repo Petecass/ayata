@@ -10,9 +10,9 @@ gulp.task('watchFiles', ['inject', 'moveFonts', 'moveImages' ], function () {
     //initialize browsersync
     browserSync.init($.browserSync);
 
-    // watch($.watch.sass, function () {
-    //         gulp.start('compileSass');
-    // });
+    watch($.watch.sass, function () {
+            gulp.start('compileSass');
+    });
     watch($.watch.js, function () {
             gulp.start('inject');
     });
