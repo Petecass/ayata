@@ -116,7 +116,7 @@ $block-grid-max: 8;
 
 $header-font-family: $--font-heading;
 $header-font-family: 'foco';
-$header-font-weight: $global-weight-normal;
+$header-font-weight: $--font-bold;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-sizes: (
@@ -125,16 +125,16 @@ $header-sizes: (
     'h2': 32,
     'h3': 20,
     'h4': 16,
-    'h5': 17,
-    'h6': 16,
+    'h5': 18,
+    'h6': 18,
   ),
   medium: (
     'h1': 28,
     'h2': 36,
     'h3': 24,
     'h4': 19,
-    'h5': 16,
-    'h6': 13,
+    'h5': 20,
+    'h6': 20,
   ),
 );
 

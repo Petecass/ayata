@@ -1,0 +1,83 @@
+.media-hub-container
+	padding-top: rem-calc(100)
+
+.post
+	position: relative
+	text-align: left
+	padding: 0 rem-calc(25) rem-calc(75)
+	margin-top: rem-calc(75)
+	border-bottom: 1px solid $post-border
+	color: $--body-text-color
+	font-family: $--font-post
+
+	&:first-child
+		margin-top: 0
+
+	&:last-child
+		margin-bottom: rem-calc(75)
+
+	a
+		color: inherit
+
+	&-title
+		font-size: rem-calc(34)
+		margin-bottom: rem-calc(40)
+		font-family: $--font-post
+		padding-right: 80px
+
+	&-category
+		position: absolute
+		top: 10px
+		right: 10px
+		text-align: center
+
+
+		&__img
+			height: 35px
+
+			&[alt='Blog']
+				height: 25px
+
+		&__title
+			font-family: $--font-post-category
+			font-size: rem-calc(14)
+			letter-spacing: 1px 
+			font-weight: 400
+			text-transform: uppercase
+			color: $post-category
+
+	&-image
+		margin-bottom: rem-calc(20)
+
+	&-excerpt
+		font-size: rem-calc(20)
+		font-family: $--font-post
+		margin-bottom: rem-calc(30)
+
+	&-social__buttons
+		text-align: right
+		position: relative
+
+		.fb-like
+			margin-top: -10px
+			position: absolute
+			right: 140px
+			top: 6px
+
+		.twitter-share-button
+			margin-right: 5px
+
+.subscribe
+	background: $bg-gray
+	text-align: left
+	font-family: $--font-post
+	padding: 20px
+
+	input[type='text'],
+	input[type='email']
+		border-radius: 5px
+		padding: rem-calc(25) rem-calc(20)
+
+	input[type='submit']
+		display: block
+		margin: 0 auto
