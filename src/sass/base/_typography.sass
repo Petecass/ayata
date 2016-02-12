@@ -5,7 +5,9 @@ h1.section-heading
 	text-align: center
 	text-transform: uppercase
 	color: $--main-heading-color
-	margin-bottom: rem-calc(40)
+	margin-bottom: rem-calc(20)
+	+breakpoint(medium)
+		margin-bottom: rem-calc(40)
 
 h2 
 	color: $tundora
@@ -15,19 +17,23 @@ h3
 	font-family: $--font-body
 	small
 		display: block
-		margin-top: rem-calc(15)
 		color: $--subheading-color	
 		font-weight: 400
 		font-size: .8em
+		line-height: 1
 
 .heading-large
 	text-transform: uppercase
-	font-size: 42px
+	font-size: 26px
+	+breakpoint(medium)
+		font-size: 42px
 
 .description
 	font-family: $--font-body
 	color: $mine-shaft
-	font-size: 20px
+	font-size: rem-calc(18)
+	+breakpoint(medium)
+		font-size: rem-calc(20)
 
 .text-left
 	text-align: left

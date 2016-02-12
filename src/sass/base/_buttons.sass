@@ -3,10 +3,11 @@
 	font-family: $--font-buttons
 	font-weight: 700
 	color: $white
-	font-size: 16px
 	border-radius: 7px
 	text-transform: uppercase
-	padding: 1rem 1.6rem
+	+breakpoint(medium)
+		font-size: 16px
+		padding: 1rem 1.6rem
 	
 	&-contact
 		color: $--button-contact
@@ -16,10 +17,13 @@
 		border: 1px solid $--button-primary
 
 	&-large
-		font-size: 1.2rem
-		padding: 1.6rem 5.3rem
 		letter-spacing: 3px
 		border: 2px solid $--button-primary
+		font-size: 0.9rem
+		padding: 1.2rem 3rem
+		+breakpoint(medium)
+			font-size: 1.2rem
+			padding: 1.6rem 5.3rem
 
 			.button-contact
 				padding: 1.2rem 5.3rem

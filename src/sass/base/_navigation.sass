@@ -7,7 +7,6 @@
   padding-left: 35px
 
 .navbar
-  color: $white
 
   &.top-bar
     position: absolute
@@ -36,9 +35,12 @@
         margin-right: 0
 
       a
-        color: $white
         font-family: $--font-nav
         font-size: 10.15pt
+        color: $--nav-color
+
+    &.white-links li a
+      color: $white
 
 .top-bar-right
   margin-right: 30px
@@ -50,11 +52,9 @@
   > li > a
     padding: 0.7rem 1.25rem
 
-.nav-gray a
-  color: $--subnav-color
-
 .active span
   position: relative
+  color: $white
 
   &::after
     content: ''
@@ -73,7 +73,7 @@
     display: inline-block
 
   a
-    color: $--subnav-color
+    color: $--nav-color
     font-family: $--font-nav
 
   .active span

@@ -1,12 +1,11 @@
 section 
-	padding: rem-calc(100) 0
 	font-family: $--font-body
-	font-size: rem-calc(20)
+	padding: rem-calc(30) 0
+	+breakpoint(medium)
+		padding: rem-calc(100) 0
 
 .spacer 
 	height: 90px
-	font-size: 1.7rem
-	padding: 25px
 	color: $white
 	text-align: center
 	margin-top: -7px
@@ -16,6 +15,12 @@ section
 	flex-direction: column
 	justify-content: center
 	background-color: $spacer-one-bg
+	padding: 20px
+	font-size: 1.4rem
+
+	+breakpoint(medium)
+		padding: 25px
+		font-size: 1.7rem
 
 	p 
 		margin-bottom: 0
@@ -35,11 +40,13 @@ section
 			padding: 0.6rem 1rem
 
 .hero
-	font-size: rem-calc(46)
 	font-family: $--font-body
 	font-weight: $--font-bold
 	background: url(../images/Rectangle.png) no-repeat;
 	color: $white
+	font-size: rem-calc(23)
+	+breakpoint(medium)
+		font-size: rem-calc(46)
 
 .aiq-logo
 	height: 80px

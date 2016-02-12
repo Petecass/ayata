@@ -9,7 +9,14 @@
   	{{subnav.active('news')}}
 
 
-  {% include "partials/post.html" %}
+<div class='row media-hub-container'>
+  <main class='columns small-12 medium-9'>          
+  	{% include "partials/post.html" %}
+ 	</main>
+	<aside class='columns medium-3'>
+		{% include "partials/subscribe.html" %}
+	</aside>
+</div>
   {% include "partials/spacer-mediakit.html" %}
   {% include "partials/footer-small.html" %}
 {% endblock %}

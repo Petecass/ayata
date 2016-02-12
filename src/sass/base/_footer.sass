@@ -1,32 +1,38 @@
 
 .footer
-  text-align: left
-  +breakpoint(medium)
-    text-align: center
   padding: rem-calc(15) 0
   background: $footer-bg
   color: $footer-color
   font-size: 0.85rem
 
+  .column
+    text-align: center
+    +breakpoint(medium)
+      text-align: left
+
+  &-row
+    max-width: 1300px
+
   &-address
-    background: url('../images/footer/map.png') left no-repeat
+    background: url('../images/footer/map.png') top left no-repeat
     background-size: 15px
     ::first-child
       margin-bottom: 0
 
   &-phone
-    background: url('../images/footer/phone.png') left no-repeat
-    a
-      color: $footer-color
+    background: url('../images/footer/phone.png') 0% 2px no-repeat
 
   &-email
-    background: url('../images/footer/email.png') left no-repeat
-    a
-      color: $footer-color
+    background: url('../images/footer/email.png') 0% 4px no-repeat
 
   &-contact
     padding-left: rem-calc(20)
     background-size: 15px
+    display: inline-block
+    color: $footer-color
+    margin-bottom: 1em
+    +breakpoint(medium)
+      display: block
 
   &-copy
     text-align: center
@@ -38,7 +44,13 @@
 
   &-social
     width: 45px
-    text-align: right
+    margin: rem-calc(10) 0
+
+    +breakpoint(medium)
+        margin: 0
 
     &:first-child
       padding-right: rem-calc(5)
+
+    &__wrap
+      text-align: right
