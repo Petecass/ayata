@@ -44,7 +44,7 @@
 			letter-spacing: 1px 
 			font-weight: 400
 			text-transform: uppercase
-			color: $post-category
+			color: $post-primary
 
 	&-image
 		margin-bottom: rem-calc(20)
@@ -53,6 +53,7 @@
 		font-size: rem-calc(20)
 		font-family: $--font-post
 		margin-bottom: rem-calc(30)
+		position: relative
 
 	&-social__buttons
 		text-align: right
@@ -66,6 +67,30 @@
 
 		.twitter-share-button
 			margin-right: 5px
+
+	figcaption
+		color: $dusty-gray
+		font-size: rem-calc(18)
+		text-align: center
+		line-height: 3
+
+	a
+		color: $post-primary
+
+	quote
+		display: block
+		padding: 20px 0 30px 60px
+		position: relative
+		font-size: rem-calc(22)
+		&::before
+			content: open-quote
+			font-size: 3em
+			position: absolute
+			top: 0
+			left: 20px
+
+	&-full
+		border: 0
 
 .subscribe
 	background: $bg-gray
@@ -81,3 +106,14 @@
 	input[type='submit']
 		display: block
 		margin: 0 auto
+
+.post-social
+	position: absolute
+	left: -40px
+	top: 10px
+
+	img
+		display: block
+		margin-bottom: 10px
+		height: 20px
+
