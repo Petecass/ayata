@@ -3,7 +3,7 @@
   <div class='navbar top-bar'>
     <div class='top-bar-title'>
       <a href='/'><img class='nav-logo' src='images/main-logo.png' alt='AyataIQ'></a>
-    </div>
+    </div><!--top-bar-title-->
     <div class='top-bar-right'>
       <ul class="navbar-links menu {%if activePage == 'home' %} white-links {% endif %}">
         <li>
@@ -25,30 +25,7 @@
           <a class="{%if activePage == 'contact' %} active {% endif %}" href='#'><span>Contact</span></a>
         </li>
       </ul>
-    </div>
-  </div>
-
-  <!-- <nav class="navbar navbar-home" >
-    <h1 class="navbar-brand logo-white"></h1>
-    <ul class="navbar-links dropdown menu " data-dropdown-menu>
-      <li><a href="/index.html">Home</a></li>
-
-      <li>
-        <a class="{%if activePage == 'what_we_do' %} active {% endif %}" href="#">What we do</a>
-      </li>
-
-      <li>
-        <a class="{%if activePage == 'word_of_mouth' %} active {% endif %}" href="/word_of_mouth.html">Word of mouth</a>
-      </li>
-
-      <li>
-        <a class="{%if activePage == 'who_we_are' %} active {% endif %}" href="/who_we_are.html">Who we are</a>
-      </li>
-      <li class="button button-outline {%if activePage == 'contact' %} active {% endif %}">
-        <a href="/contact.html">Get in touch</a>
-      </li>
-    </ul>
-    <button type="button" class="button" data-toggle="offCanvas" id="nav-toggle"><span></span></button>
-  </nav> -->
+    </div><!--top-bar-right-->
+  </div><!--navbar-->
 
 {% endmacro %}

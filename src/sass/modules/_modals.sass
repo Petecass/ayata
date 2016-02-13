@@ -1,0 +1,44 @@
+#getIt
+	padding: rem-calc(25) rem-calc(40)
+	text-align: left
+	color: $--subheading-color
+	font-family: $--font-body
+
+	h3
+		margin-bottom: rem-calc(20)
+		text-align: center
+		color: $--secondary-heading-color
+
+		small
+			font-size: 0.7em
+			
+.people-modal
+	text-align: left
+	font-size: rem-calc(16)
+	font-family: $--font-body
+	padding: rem-calc(30)
+	h3
+		font-size: rem-calc(30)
+		margin-bottom: rem-calc(10)
+		small
+			font-size: 0.6em
+
+	&__pic
+		width: 150px
+		float: left
+		margin-right: rem-calc(30)
+
+	.people-social
+		width: 30px
+		float: none
+		margin-right: 5px
+		&::last-child
+			margin-right: 0
+
+
+	&__details
+		+clearfix()
+		margin-bottom: rem-calc(15)
+
+	p
+		font-family: $--font-body

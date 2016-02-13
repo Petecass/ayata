@@ -14,25 +14,20 @@
     max-width: 1300px
 
   &-address
-    background: url('../images/footer/map.png') top left no-repeat
-    background-size: 15px
     ::first-child
       margin-bottom: 0
-
-  &-phone
-    background: url('../images/footer/phone.png') 0% 2px no-repeat
-
-  &-email
-    background: url('../images/footer/email.png') 0% 4px no-repeat
 
   &-contact
     padding-left: rem-calc(20)
     background-size: 15px
     display: inline-block
-    color: $footer-color
     margin-bottom: 1em
+    color: $footer-color
     +breakpoint(medium)
       display: block
+
+    &:hover
+      color: $footer-links-hover
 
   &-copy
     text-align: center
