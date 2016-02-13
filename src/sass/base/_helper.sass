@@ -8,6 +8,10 @@ input[type='email']
 	padding: rem-calc(25) rem-calc(20)
 	background-color: $input-bg
 
+	&:invalid
+		border-color: $input-invalid
+		color: $input-invalid
+
 input[type='submit']
 	display: block
 	margin: 0 auto
